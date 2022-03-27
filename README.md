@@ -5,7 +5,7 @@ It is implemented with Java Spring boot
 * JRE 11 or higer version
 
 # How to run
-* download *demo.jar*
+* download *restApiDemo.jar*
 * run following command
 ```
 java -jar demo.jar
