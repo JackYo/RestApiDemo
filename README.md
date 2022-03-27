@@ -5,9 +5,9 @@ It is implemented with Java Spring boot
 * JRE 11 or higer version
 
 # How to run
-* download and unzip *demo.jar* to a directory *demo*
-* go into demo directory `cd demo`
+* download *demo.jar*
 * run following command
 ```
 java -jar demo.jar
 ```
+* It will automatically create a `uploads` folder and store files there.
