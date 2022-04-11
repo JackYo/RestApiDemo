@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "959376a3-495c-4b28-bd09-4d1c9a2c76ca",
+		"name": "restPractice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/uploadFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Document/工作/JSguide_chap5.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/root/ab/cat.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"root",
+						"ab",
+						"cat.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/file/root/ab/cat.jpg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file/root/ab/cat.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"root",
+						"ab",
+						"cat.jpg"
+					],
+					"query": [
+						{
+							"key": "orderByDirection",
+							"value": "Descending",
+							"disabled": true
+						},
+						{
+							"key": "filterByName",
+							"value": "text",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "size",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/file/root/ab/cat.jpg",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "update",
+							"type": "file",
+							"src": "/D:/Document/桌布/Funny_Kitty_157-022.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/root/ab/cat.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"root",
+						"ab",
+						"cat.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/file/root/usr/aab/myTet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file/root/usr/aab/myTet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"root",
+						"usr",
+						"aab",
+						"myTet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
